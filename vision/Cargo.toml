@@ -1,0 +1,36 @@
+[package]
+name = "vision"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.backtrace] # https://github.com/rust-lang/backtrace-rs
+# MIT / APACHE-2.0
+# Used for getting a strack trace on error
+version =  "0.3" 
+
+[dependencies.env_logger] # https://github.com/sebasmagri/env_logger
+# MIT / APACHE-2.0
+# For logging to console
+version = "0.7.1"   
+
+[dependencies.log] # https://github.com/rust-lang/log
+# MIT / APACHE-2.0
+# Use for logging macros
+version = "0.4.8" 
+
+[dependencies.macroquad] # https://github.com/not-fl3/macroquad
+# MIT / APACHE-2.0
+# Used for rendering the game
+version =  "0.3.24"
+ 
+[dependencies.awbw]  
+path = "../awbw" 
+
+[dependencies.common]  
+path = "../common" 
+ 
+[dependencies]
+lazy_static = "1.4.0"
+image = { version = "0.24", default-features = false, features = ["png"] }

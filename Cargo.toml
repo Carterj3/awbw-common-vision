@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "vision",
+    "common",
+    "awbw",
+]
+
+[profile.release]
+opt-level = 3
+panic = "unwind"
+
+[profile.dev]
+panic = "unwind"
